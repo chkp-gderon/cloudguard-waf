@@ -10,7 +10,7 @@ tools: ["read_file", "run_in_terminal"]
 
 ## Goal
 
-You receive a classified CSV export of CloudGuard WAF (Check Point Infinity Next) critical-severity events. Your task is to:
+You receive a classified CSV export of Check Point WAF (Check Point Infinity Next) critical-severity events. Your task is to:
 
 1. Parse all rows labelled `benign` in the `Analyst Label` column.
 2. Group them by meaningful signature patterns (host, method, URI, matched location, parameter name).
