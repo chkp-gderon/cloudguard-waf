@@ -1,8 +1,28 @@
-# Reducing WAF False Positives
+# Check Point Web Application Firewall False Positive Reduction Guide
 
-## Context
+## Introduction
 
-This outline captures the guidance explained by Geert De Ron during the **WAF check** meeting. The approach is to improve machine-learning accuracy while maintaining immediate protection against known attacks.
+A Web Application Firewall (WAF) is most effective when it can accurately distinguish between legitimate application behavior and malicious activity. During the initial deployment phase, especially when protecting legacy, complex, or highly customized applications, false positives can occur as security engines learn the application's normal traffic patterns.
+
+This document provides a practical framework for reducing false positives while maintaining a strong security posture. The objective is not to immediately eliminate every alert, but rather to systematically improve detection accuracy through traffic analysis, validation, tuning, and controlled enforcement.
+
+By following the recommendations in this guide, organizations can:
+
+- Accelerate the learning and optimization process.
+- Improve the accuracy of behavioral and machine-learning based protections.
+- Reduce operational overhead caused by false positive investigations.
+- Maintain protection against known attacks during the tuning phase.
+- Progressively move applications from monitoring mode to prevention mode with confidence.
+
+The approach described in this guide is based on several core principles:
+
+- Validate before whitelisting.
+- Use trusted traffic to improve learning quality.
+- Prioritize tuning efforts based on risk and severity.
+- Introduce enforcement gradually.
+- Continuously review and refine security models using real application traffic.
+
+While every application environment is different, the methodology presented here can be applied to both modern and legacy applications and serves as a repeatable process for achieving high protection accuracy with minimal business impact.
 
 ## 1. Understand the Two Protection Layers
 
