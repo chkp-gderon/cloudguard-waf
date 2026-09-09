@@ -1,4 +1,4 @@
-# Web Application Firewall False Positive Reduction Guide
+# Check Point Web Application Firewall False Positive Reduction Guide
 
 ## Introduction
 
